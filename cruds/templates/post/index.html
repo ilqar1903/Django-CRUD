@@ -1,0 +1,15 @@
+<html>
+
+
+<body>
+{% for post in posts %}
+<a href="{% url 'details' id=post.id %}">{{post.header}}</a><br>
+ {{post.id}}<br>
+   {{post.text}}<br>
+{{post.create_date}}<br>
+
+{% endfor %}
+
+
+</body>
+</html>
